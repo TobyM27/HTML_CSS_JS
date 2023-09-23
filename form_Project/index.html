@@ -1,88 +1,98 @@
 <!DOCTYPE html>
+<!--ONE PIECE FORM-->
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" ref="styles.css">
+	<link rel="stylesheet" type="text/css" ref="styles.css"/>
 	<title>One Piece Survey Form</title>
 </head>
 <body>
-	<h1 id="title">One Piece Survey Form</h1>
-	<p id="description">This form can only be taken by those who are Luffy's "Nakamas"!</p>
-	<form id="survey-form">
-		<label id="name-label" for="name">
-			Name<input id="name" type="text" name="name" placeholder="What is your pirate name?" required>
-		</label>
-
-		<label id="email-number" for="email">
-			Email<input id="email" type="email" name="email" required placeholder="Just take this as your (s)mail transponder number...">
-		</label>
-
-		<label id="number-label" for="number">
-			Lucky number<input id="number" type="number" name="number" required placeholder="What is your lucky number (from 1 to 100), my fellow pirate?" min="1" max="100">
-		</label>
-
-		<div>
-			<p>Which devil fruit would you eat, my fellow nakama?</p>
-			<label>
-				<input type="radio" name="devil-fruit"> Yami Yami no Mi
-			</label>
-			<label>
-				<input type="radio" name="devil-fruit"> Gura Gura no Mi	
-			</label>
-			<label>
-				<input type="radio" name="devil-fruit"> Hito Hito no Mi
-			</label>
-			<label>
-				<input type="radio" name="devil-fruit"> Pika Pika no Mi
-			</label>
-			<label>
-				<input type="radio" name="devil-fruit"> Nikyu Nikyu no Mi
-			</label>
+	<div class="container">
+		<header class="header">
+			<h1 id="title">One Piece Survey Form</h1>
+			<p id="description">This form can only be taken by those who are Luffy's "Nakamas"!</p>
+		</header>
+		<form id="survey-form">
+			<div class="form-group">
+				<label id="name-label" for="name">Name<input id="name" type="text" name="name" placeholder="What is your pirate name?" required>
+				</label>
+			</div>
+			
+			<div class="form-group">
+				<label id="email-number" for="email">Email<input id="email" type="email" name="email" required placeholder="Just take this as your (s)mail transponder number...">
+				</label>
 			</div>
 
-		<label>
-			<p>Which One Piece's Arc is your favorite, pirate?</p>
-			<select id="dropdown"> 
-				<option>Marineford Arc</option>
-				<option value="Wano Country Arc">Wano Country Arc</option>
-				<option value="Enies Lobby Arc">Enies Lobby Arc</option>
-				<option value="Dressrose Arc">Dressrose Arc</option>
-				<option value="Arlong Park Arc">Arlong Park Arc</option>
-				<option value="other">other</option>
-			</select>
-		</label>
+			<div class="form-group">
+				<label id="number-label" for="number">Lucky number<input id="number" type="number" name="number" required placeholder="What is your lucky number (from 1 to 100), my fellow pirate?" min="1" max="100">
+				</label>
+			</div>
+			
 
-		<div>
-			<p>If you were a captain, who would you ask to join your crew in One Piece? (Check all that apply)</p>
-			<label>
-				<input type="checkbox" name="prefer" value="Zoro"> Zoro
-			</label>
-			<label>
-				<input type="checkbox" name="prefer" value="Teach"> Teach
-			</label>
-			<label>
-				<input type="checkbox" name="prefer" value="Corazon"> Corazon
-			</label>
-			<label>
-				<input type="checkbox" name="prefer" value="Mr.2"> Mr.2 
-			</label>
-			<label>
-				<input type="checkbox" name="prefer" value="Chopper"> Chopper
-			</label>
-		</div>
+			<div class="form-group">
+				<p>Which devil fruit would you eat, my fellow nakama?</p>
+				<label>
+					<input type="radio" name="devil-fruit" class="input_radio"> Yami Yami no Mi
+				</label>
+				<label>
+					<input type="radio" name="devil-fruit" class="input_radio"> Gura Gura no Mi	
+				</label>
+				<label>
+					<input type="radio" name="devil-fruit" class="input_radio"> Hito Hito no Mi
+				</label>
+				<label>
+					<input type="radio" name="devil-fruit" class="input_radio"> Pika Pika no Mi
+				</label>
+				<label>
+					<input type="radio" name="devil-fruit" class="input_radio"> Nikyu Nikyu no Mi
+				</label>
+				</div>
 
-		<div>
-			<p>What is your general review or opinion about One Piece?</p>
-			<label for="opinion">
-				<textarea id="opinion" name="opinion" rows="3" cols="30" placeholder="I think One Piece is a goated piece of fiction!..."></textarea>
-			</label>
-		</div>
+			<div class="form-group">
+				<label>
+					<p>Which One Piece's Arc is your favorite, pirate?</p>
+					<select id="dropdown"> 
+						<option>Marineford Arc</option>
+						<option value="Wano Country Arc">Wano Country Arc</option>
+						<option value="Enies Lobby Arc">Enies Lobby Arc</option>
+						<option value="Dressrose Arc">Dressrose Arc</option>
+						<option value="Arlong Park Arc">Arlong Park Arc</option>
+						<option value="other">other</option>
+					</select>
+				</label>
+			</div>
 
-		<div>
-			<input type="submit" name="Submit">
-		</div>
-	</form>
+			<div class="form-group">
+				<p>If you were a captain, who would you ask to join your crew in One Piece? (Check all that apply)</p>
+				<label>
+					<input type="checkbox" name="prefer" value="Zoro"> Zoro
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="Teach"> Teach
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="Corazon"> Corazon
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="Mr.2"> Mr.2 
+				</label>
+				<label>
+					<input type="checkbox" name="prefer" value="Chopper"> Chopper
+				</label>
+			</div>
 
+			<div class="form-group">
+				<p>What is your general review or opinion about One Piece?</p>
+				<label for="opinion">
+					<textarea id="opinion" name="opinion" rows="3" cols="30" placeholder="I think One Piece is a goated piece of fiction!..."></textarea>
+				</label>
+			</div>
+
+			<div class="form-group">
+				<button type="submit" name="Submit" class="submit_button"> Submit </button>
+			</div>
+		</form>
+	</div>
 </body>
 </html>
